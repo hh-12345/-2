@@ -1,0 +1,105 @@
+
+/* 公共部分 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  overflow: hidden;
+}
+.img img{
+  transition: all .4s;
+}
+.img:hover img{
+  transform: scale(1.3);
+}
+
+body {
+  background-color: #c7c3dc;
+}
+
+.banxin {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: #396125;
+}
+
+.nav {
+  display: flex !important;
+  width: 1200px;
+  height: 100%;
+  background-color: #396125;
+}
+
+.nav a {
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #215130;
+}
+
+.a {
+  position: relative;
+
+}
+
+.option {
+  display: none !important;
+}
+
+.nav .a:hover .option {
+  display: block !important;
+}
+
+.a .option {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: #396125;
+  z-index: 99999999;
+}
+
+.p:hover {
+  background-color: #215130;
+}
+
+.a .p {
+  width: 100%;
+  flex: 1;
+  /* width: 100%; */
+  color: #fff;
+}
+
+
+
+
+
+.main_top {
+  height: 500px;
+  background-color: pink;
+}

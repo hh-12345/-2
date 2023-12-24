@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青城山旅游网</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .nav {
+            display: flex !important;
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav a {
+            flex: 1;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #215130;
+        }
+
+        .a {
+            position: relative;
+
+        }
+
+        .option {
+            display: none !important;
+        }
+
+        .nav .a:hover .option {
+            display: block !important;
+
+
+        }
+
+        .a .option {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background-color: #396125;
+            z-index: 99999999;
+        }
+
+        .p:hover {
+            background-color: #215130;
+        }
+
+        .a .p {
+            width: 100%;
+            flex: 1;
+            /* width: 100%; */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="web">
+        <!-- search栏 -->
+        <div class="search">
+            <img width="400" height="120" src="./img/导航栏.png">
+            <div class="right">
+                <img width="300" src="./img/导航栏文字.png">
+                <div class="input-search">
+                    <input id="search" type="text">
+                    <input type="image" src="./img/search-icon.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- navigate栏 -->
+        <div class="navigate">
+            <div class="column">
+                <div class="nav">
+                    <a href="index.html">网站首页</a>
+                    <a href="feiyi.html">非遗流传</a>
+                    <a href="renwen.html">人文文化</a>
+                    <a href="#" class="a">目的地
+                      <div class="option">
+                        <div class="p">成都</div>
+                        <div class="p">广元</div>
+                        <div class="p">巴中</div>
+                      </div>
+                    </a>
+                    <a href="fengjing.html">风景热点</a>
+                    <a href="login.html">登录</a>
+                    <a href="register.html">注册</a>
+                  </div>
+
+
+            </div>
+        </div>
+
+        <div class="tips">
+            点我了解详情
+        </div>
+        <!-- 轮播图功能 -->
+        <div class="rotation-chart slideshow">
+            <img class="img active" src="img/青城山.jpg">
+            <img class="img" src="img/青城山7.jpg">
+            <img class="img" src="img/青城山5.jpg">
+            <img class="img" src="img/青城山4.jpg">
+            <div class="dots"></div>
+            <img id="prev-button" width="60" height="60" class="carousel-button prev-button" src="img/300ppi/x画板 2.png">
+            <img id="next-button" width="60" height="60" class="carousel-button next-button" src="img/300ppi/x画板 3.png">
+        </div>
+        <!-- 栏目 -->
+        <div class="context">
+            <div class="context-left">
+                <div class="context-left-top">
+                    <span class="title">风景热点</span>
+                    <div class="more">
+                        <i class="fas fa-envelope"></i>
+                        <span>更多</span>
+                    </div>
+                </div>
+                <div class="context-left-bottom">
+                    <div>
+                        <img width="300" height="160" src="img/武侯祠.jpg">
+                        <div class="txt">
+                            前山是青城山风景名胜区的主体部分，约15平方千米，景色优美，文物古迹众多，主要景点有建福宫、天然图画、天师洞、朝阳洞、祖师殿、上清宫等 </div>
+                    </div>
+                    <div>
+                        <img width="300" height="160" src="img/青城山.jpg">
+                        <div class="txt">
+                            青城山（Mount Qingcheng），世界文化遗产青城山-都江堰的主体景区、重点文物保护单位、重点风景名胜区、AAAAA级旅游景区、全真龙门派圣地…
+                            青城山位于四川省成都市都江堰市西南，东距成都市区68千米，处于都江堰水利工程西南10千米处。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="context-right">
+                <div class="context-right-top">
+                    <span class="title">非遗热点</span>
+                    <div class="more">
+                        <i class="fas fa-envelope"></i>
+                        <span>更多</span>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="context-right-bottom">
+                    <div class="list">
+                        <span>端公戏（旺苍端公戏）</span>
+                        <span class="date">10-25</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>彝族刺绣（凉山彝族刺绣）</span>
+                        <span class="date">06-22</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>青城武术</span>
+                        <span class="date">05-22</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>藏族唐卡（郎卡杰唐卡）</span>
+                        <span class="date">03-12</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>手工制鞋技艺</span>
+                        <span class="date">06-21</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>藤编（怀远藤编）</span>
+                        <span class="date">06-21</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="list">
+                        <span>川剧</span>
+                        <span class="date">06-21</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 栏目 -->
+        <div class="interest">
+            <span class="recommend">当季推荐</span>
+            <div class="month">
+                <span class="one-on-one">1月</span>
+                <span class="one-on-one">2月</span>
+                <span class="one-on-one">3月</span>
+                <span class="one-on-one">4月</span>
+                <span class="one-on-one">6月</span>
+                <span class="one-on-one">7月</span>
+                <span class="one-on-one">8月</span>
+                <span class="one-on-one">9月</span>
+                <span class="one-on-one">10月</span>
+                <span class="one-on-one">11月</span>
+                <span class="one-on-one">12月</span>
+            </div>
+            <div class="pic">
+                <div class="pic-top">
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山3.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山4.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山5.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山6.jpg">
+                        <span>青城山</span>
+                    </div>
+                </div>
+
+                <div class="pic-top">
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山7.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山8.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山9.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山10.jpg">
+                        <span>青城山</span>
+                    </div>
+                </div>
+                <div class="pic-top">
+                    <div class="image-container" data-month="3">
+                        <img src="img/青城山10.jpg">
+                        <span>青城山 </span>
+                    </div>
+                    <div class="image-container" data-month="3">
+                        <img src="img/青城山2.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="3">
+                        <img src="img/青城山4.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="3">
+                        <img src="img/青城山3.jpg">
+                        <span>青城山</span>
+                    </div>
+                </div>
+                <div class="pic-bottom">
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山6.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山7.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="1">
+                        <img src="img/青城山8.jpg">
+                        <span>青城山</span>
+                    </div>
+
+                    <div class="image-container" data-month="1">
+                        <img src="./img/City/更多.jpg">
+                        <span class="move-to">更多</span>
+                        <i class="icon-i"></i>
+                    </div>
+                </div>
+                <div class="pic-bottom">
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山4.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山5.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="2">
+                        <img src="img/青城山2.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="2">
+                        <img src="./img/City/更多.jpg">
+                        <span class="move-to">更多</span>
+                        <i class="icon-i"></i>
+                    </div>
+                </div>
+                <div class="pic-bottom">
+                    <div class="image-container" data-month="3">
+                        <img src="img/青城山6.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="3">
+                        <img src="./img/City/深圳.jpeg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="3">
+                        <img src="img/郎中古城.jpg">
+                        <span>青城山</span>
+                    </div>
+                    <div class="image-container" data-month="3">
+                        <img src="./img/City/更多.jpg">
+                        <span class="move-to">更多</span>
+                        <i class="icon-i"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 栏目 -->
+        <div class="menu">
+            <div class="map-bottom"
+                style="width: 96%;display:flex;justify-content: space-between;margin:0 auto;padding:0.6rem;">
+                <span class="explore">近期美景</span>
+                <span class="destination">
+                    <span>更多</span>
+                    <i class="fas fa-angle-right"></i>
+                </span>
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <img width="325" src="./img/Travel/1.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">买起来</span>
+                    <span class="text">【梦幻暑期】川西九寨沟四姑娘山4日游纯玩/若尔盖草原/达古冰川+成都熊猫基地/夜游都江堰南桥/毕棚沟+黄龙（双流专车接机）</span>
+                    <div class="bottom">
+                        <span class="price">￥1088起</span>
+                        <span class="message">已售1903</span>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <img width="325" src="./img/Travel/2.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">美景看不停</span>
+                    <span class="text">天堂森林公园门票 可选网红玻璃海景栈道·索桥·丛林飞跃·雨林飞漂项目 亲子玩乐</span>
+                    <div class="bottom">
+                        <span class="price">￥666起</span>
+                        <span class="message">已售808</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/3.png">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">暑假必去</span>
+                    <span class="text">西藏林芝5日游 观景酒店·无人机航拍·布宫旅拍 西藏林芝+来古冰川+巴松措+雅鲁藏布大峡谷+然乌湖+果果塘大拐弯+林芝岗云杉林+西藏拉萨）</span>
+                    <div class="bottom">
+                        <span class="price">￥3180起</span>
+                        <span class="message">已售289</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/4.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">省钱游</span>
+                    <span class="text">西藏珠峰大本营5日游 可选无人机航拍/西藏拉萨市旅拍 纳木措圣象天门+羊湖+奇林峡+扎西半岛+卡若拉冰川+59冰川+珠穆朗玛峰+西藏拉萨出发）</span>
+                    <div class="bottom">
+                        <span class="price">￥1512起</span>
+                        <span class="message">已售21235</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/5.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">一日私属</span>
+                    <span class="text">网红打卡·酒店1-4晚多套餐可选 游艇出海3小时 水世界水族馆无限次畅玩 自助早餐 旅拍写真 迷你吧 拼车接送机 亲子 酒店</span>
+                    <div class="bottom">
+                        <span class="price">￥1855起</span>
+                        <span class="message">已售265</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/6.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">买买买</span>
+                    <span class="text">暑期亲子游 雪山雨崩徒步6日游·专业向导带队徒步雨崩村冰湖神瀑·登山杖奖牌证书（驻点摄影师跟拍一天+赠丽江集合日住宿）</span>
+                    <div class="bottom">
+                        <span class="price">￥5858起</span>
+                        <span class="message">已售903</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/7.gif">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">组团游</span>
+                    <span class="text">达古冰川+毕棚沟纯玩2日游 可选8人团·景区精修旅拍 四川达古冰川/毕棚沟/四川成都（毕棚沟错峰出游 达古冰川旅游 四川成都出发）</span>
+                    <div class="bottom">
+                        <span class="price">￥4158起</span>
+                        <span class="message">已售152</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img width="325" src="./img/Travel/8.jpeg">
+                    <span class="hot-sale">特卖</span>
+                    <span class="bottom-detail">好玩</span>
+                    <span class="text">【周六有房】度假村云来客栈/长盛荘 2天1晚庙会住宿套餐（含早餐+无限次温泉+特色庙会自助晚餐+赠送单车券+卡拉OK券）</span>
+                    <div class="bottom">
+                        <span class="price">￥4855起</span>
+                        <span class="message">已售1263</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 栏目 -->
+        <div class="map-bottom"
+            style="width: 92%;display:flex;justify-content: space-between;margin:1rem auto;padding:0.6rem;">
+            <span>
+                <span class="explore">探索<span class="world">精彩世界</span></span>
+                <span class="start">出发地</span>
+                <select id="location-select">
+                    <option value="上海">上海</option>
+                    <option value="北京">北京</option>
+                    <option value="天津">天津</option>
+                </select>
+            </span>
+            <span class="destination">
+                <span>更多目的地</span>
+                <i class="fas fa-angle-right"></i>
+            </span>
+        </div>
+        <div id="map-container" style="width: 92%; height: 400px;margin:2rem auto;">
+            <img width="1400" height="500" src="img/map.jpg">
+        </div>
+        <!-- 栏目 -->
+        <div class="game">
+            <h2>贪吃蛇小游戏</h2>
+            <canvas id="game-board" width="1400" height="400"></canvas>
+            <button id="btn">开始游戏</button>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

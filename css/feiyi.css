@@ -1,0 +1,34 @@
+.main_top {
+  height: 500px;
+  background-color: pink;
+}
+
+.jiashao {
+  margin-top: 20px;
+}
+
+.common {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.one {
+  flex: 1;
+  height: 500px;
+  background-color: rgb(255, 228, 232);
+  margin-bottom: 20px;
+}
+.two{
+  margin: 0 20px;
+}
+
+.one .img {
+  height: 250px;
+}
+
+.one p {
+  width: 386px;
+  padding: 10px;
+  overflow-wrap: break-word;
+  line-height: 2em;
+}

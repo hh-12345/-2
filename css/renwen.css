@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.ok {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  /* background-color: pink; */
+  margin-bottom: 30px;
+}
+
+.ok .img {
+  width: 350px;
+  height: 300px;
+  /* background-color: blue; */
+}
+
+.ok .right {
+  flex: 1;
+  padding: 10px;
+  word-wrap: break-word;
+  width: 850px;
+  line-height: 3em;
+
+}
